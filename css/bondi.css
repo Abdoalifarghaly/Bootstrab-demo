@@ -1,0 +1,236 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --white-color:white;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --gray-color:#eff7fa;
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
+.navbar{
+    background-color: var(--dark-color);
+
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.search{
+    color: white;
+    border-left: 3px solid var(--green-color);
+}
+.search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: var(--white-color);
+    font-size: 25px;
+    border-color: var(--white-color);
+
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    color: var(--green-color);
+}
+.main-btn{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color:var(--yellow-color);
+}
+ /* strat landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+    
+    }
+.main-title::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    transform: translateX(-50%);
+   background-color: var(--green-color);
+
+}
+.icon-holder{
+    height: 200px;
+}
+.icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number{
+    font-size: 12rem;
+    color:var(--gray-color)
+}
+.icon{
+    color: var(--green-color);
+    font-size: 3rem;
+}
+.feat h4{
+    color:var(--yellow-color)
+}
+/* end landing  */
+
+/* sectio */
+.sect{
+    background-color: var(--gray-color);
+    height: 120vh;
+}
+.sect .partone .secound-title p{
+    color: grey;
+
+}
+.secound-title::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+   background-color: var(--green-color);
+
+}
+.sect .butto .btn.active,
+.sect .butto .btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+
+}
+
+.our-work{
+    background-color: var(--gray-color);
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: .3s;
+    transform: translateX(calc(-100% - 5px));
+    color: var(--white-color);
+    font-size: 40px;
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+.dec{
+    max-width: 500px;
+}
+.imges img{
+    width: 800px;
+}
+.our-team{
+    background-color: var(--gray-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team{
+    background-color: var(--gray-color);
+} 
+.team .box h4{
+    background-color: var(--green-color);
+}
+.team .box{
+    background-color: var(--white-color);
+}
+.tech .container .row img{
+    width: 100px;
+}
+.project{
+    background-color: var(--dark-color);
+    
+}
+
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text" ]{
+    border: none;
+    border-bottom: 1px solid white;
+
+}
+
+.subscribe input[type="text" ]:focus{
+    outline: none;
+}
+.subscribe ::placeholder{
+    color: white;
+}
+.subscribe input[type="submit" ]{
+background-color: var(--red-color);
+color: var(--yellow-color);
+}
+.footer{
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.mailtoUs:hover{
+    border: none;
+}
+.social-icon{
+display: inline-block;
+width: 40px;
+height: 40px;
+font-size: 30px;
+color: var(--white-color);
+border-radius: 50%;
+margin: 5px;
+text-align: center;
+
+;}
+.social-icon:nth-child(1){
+    background-color: #3b5998;
+}
+.social-icon:nth-child(2){
+    background-color: #1da1f2;
+}
+
+.social-icon:nth-child(3){
+    background-color: #db4a39;
+}
+.social-icon:nth-child(4){
+    background-color: #ea4c89; 
+}
+.bondi{
+    color: var(--yellow-color);
+}
+.bondii{
+    color: var(--green-color);
+}
+
+/* end section */
+/* .navbar-nav .nav-link {
+    color: blue !important;
+} */
